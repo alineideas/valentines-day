@@ -25,10 +25,6 @@ export const memoriesData: Category[] = [
         caption: '❤️'
       },
       {
-        src: '/images/viagem3.jpeg',
-        caption: '❤️'
-      },
-      {
         src: '/images/viagem4.jpeg',
         caption: '❤️'
       },
