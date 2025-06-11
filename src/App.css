@@ -1,38 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F5F5F5;
+  /* Um rosa bem clarinho */
+  color: #333;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #CDB4DB 30%, #F28482 100%);
+  padding: 40px 20px;
+  color: #333333;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.app-header h1 {
+  font-family: 'Parisienne', cursive;
+  font-size: 3.5rem;
+  margin: 0;
+  /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); */
+  font-weight: 400;
+  font-style: normal;
+}
+
+.app-header p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+.category-tabs {
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.category-tabs button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 12px 25px;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  background-color: #f1f1f1;
+  color: #555555;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.category-tabs button:hover {
+  background-color: #e0e0e0;
 }
+
+.category-tabs button.active {
+  background-color: #A8D5BA;
+  color: #333333;
+  border-color: #A8D5BA;
+  transform: scale(1.05);
+}
+
+main {
+  flex-grow: 1;
+}
+
+.app-footer {
+  padding: 20px;
+  background-color: #333;
+  color: #ddd;
+  font-size: 0.9rem;
+}
+
+.app-footer p {
+  margin: 0;
+}
+
+/* .spotify-player-container {
+  padding: 20px 20px 0 20px;
+  max-width: 500px;
+  margin: 0 auto;
+} */
